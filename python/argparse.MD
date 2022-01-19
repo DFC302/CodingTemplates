@@ -11,7 +11,7 @@ def options():
       "-short_cmd", "lng_cmd",
       help="Description",
       action="store" -- to store a value or action="store_true" to verify usage,
-      type="specify type",
+      type=specify type,
     )
 
     # optional -- make sure at least one command is given
@@ -27,3 +27,6 @@ def options():
     return args
     
 ```
+
+# also nargs can be used like so:
+	nargs=+ for one or more options
